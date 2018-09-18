@@ -1,4 +1,3 @@
-import '../index.html';
 import '../css/app.scss';
 
 export class C {
