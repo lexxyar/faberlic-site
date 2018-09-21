@@ -1,0 +1,29 @@
+.d {
+  &.cc.ru::before {
+    content: "+7";
+  }
+  &.mc::before {
+    content: "(";
+  }
+  &.mc::after {
+    content: ")";
+  }
+  &.g3::after {
+  }
+  @for $i from 0 to 9 {
+    &.d#{$i}::before {
+      content: "-";
+    }
+    &.d#{$i}::after {
+      content: "0#{$i}";
+    }
+  }
+  @for $i from 10 to 99 {
+    &.d#{$i}::before {
+      content: "-";
+    }
+    &.d#{$i}::after {
+      content: "#{$i}";
+    }
+  }
+}

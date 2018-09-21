@@ -1,0 +1,90 @@
+$caroucel-bullet-size: 8px;
+$caroucel-item-size: 120px;
+
+.caroucel {
+  background-color: #00f;
+  width: 100%;
+  padding: 5px 5px 0;
+  display: block;
+  .caroucel-wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+
+    .cnav {
+      position: absolute;
+      top: 50%;
+      .cnav-left {
+      }
+      .cnav-right {
+      }
+    }
+
+    .items {
+      width: 9999px;
+      overflow-y: hidden;
+      height: 85%;
+
+      .item {
+        float: left;
+        border: 1px solid white;
+        height: 100%;
+        min-width: $caroucel-item-size;
+        min-height: $caroucel-item-size;
+        width: $caroucel-item-size;
+        height: $caroucel-item-size;
+        max-width: $caroucel-item-size;
+        max-height: $caroucel-item-size;
+        margin-right: 10px;
+        img {
+          width: 100%;
+        }
+        &.active {
+          &::before {
+            content: "ACTIVE";
+          }
+        }
+      }
+    }
+
+    .navpg {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 0;
+      height: 1rem;
+      line-height: 1rem;
+      width: 100%;
+      ul {
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        height: 1rem;
+        display: block;
+        text-align: center;
+        li {
+          margin: 0 5px;
+          padding: 0;
+          display: inline-block;
+
+          a {
+            background-color: rgba(255, 255, 255, 0.5);
+            font-size: 0;
+            width: $caroucel-bullet-size;
+            height: $caroucel-bullet-size;
+            line-height: $caroucel-bullet-size;
+            border-radius: 50%;
+            display: block;
+
+            &.active {
+              background-color: #fff;
+            }
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.content {
+  .content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 10px;
+    .side-bar {
+      &.left {
+      }
+    }
+    .main-content {
+      .content-top {
+      }
+      .content-middle {
+        img {
+          width: 100%;
+        }
+      }
+      .content-bottom {
+      }
+    }
+  }
+}

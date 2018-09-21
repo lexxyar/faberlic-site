@@ -1,0 +1,73 @@
+$infograph-image-height: 200px;
+$infograph-text-strach: -25px;
+
+.infograph {
+  .infograph-wrapper {
+    .info-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 2fr 1fr) 2fr;
+      grid-column-gap: 10px;
+      .info-item {
+        // border: 1px solid black;
+        .info-content {
+          height: 100%;
+          display: grid;
+          grid-template-rows: 3fr 1fr;
+          align-items: flex-end;
+          .people {
+            text-align: center;
+            img {
+              height: $infograph-image-height;
+            }
+          }
+          .info-text {
+            margin-left: $infograph-text-strach;
+            margin-right: $infograph-text-strach;
+            text-align: center;
+            height: 100%;
+          }
+        }
+        &:nth-child(even) {
+            .info-content {
+              align-items: center;
+              grid-template-rows: 1fr;
+            }
+          }
+        &:nth-child(3) {
+          .people img {
+            height: $infograph-image-height - 20px;
+          }
+        }
+        &:first-child {
+          .info-text {
+            margin-left: 0;
+            // text-align: left;
+          }
+        }
+        &:last-child {
+          .info-text {
+            margin-right: 0;
+            // text-align: left;
+          }
+        }
+        &.arrow {
+          display: grid;
+          grid-template-rows: 1fr;
+          align-items: center;
+          img {
+            height: $infograph-image-height / 4;
+          }
+        }
+      }
+    }
+
+    .registration-button-wrapper {
+      text-align: center;
+      line-height: 3.5rem;
+      height: 3.8rem;
+    }
+  }
+}

@@ -1,14 +1,201 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="dist/css/app.css">
+    <!-- <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/brands.min.css"> -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="/node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+    <script src="/node_modules/@fortawesome/fontawesome-free/js/brands.min.js"></script>
+
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/brands.js" integrity="sha384-2vdvXGQdnt+ze3ylY5ESeZ9TOxwxlOsldUzQBwtjvRpen1FwDT767SqyVbYrltjb" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/fontawesome.js" integrity="sha384-2OfHGv4zQZxcNK+oL8TR9pA+ADXtUODqGpIRy1zOgioC4X3+2vbOAp5Qv7uHM4Z8" crossorigin="anonymous"></script> -->
 </head>
+
 <body>
-    
-    <script src="dist/js/app.js"></script>
+
+    <!-- <div class="static-bg"></div> -->
+
+    <header class="container">
+        <div class="header-wrapper">
+            <div class="logo-wrapper f-left">
+                <div class="logo"></div>
+            </div>
+
+            <div class="caroucel" id="slider">
+                <div class="caroucel-wrapper">
+                    <div class="cnav cnav-left"></div>
+                    <div class="cnav cnav-right"></div>
+                    <div class="items">
+                        <div class="item item-1">
+                            <img src="./images/slider/slide01.jpg" alt="">
+                        </div>
+                        <div class="item item-2">
+                            <img src="./images/slider/slide02.jpg" alt="">
+                        </div>
+                        <div class="item item-3">
+                            <img src="./images/slider/slide03.jpg" alt="">
+                        </div>
+                        <div class="item item-4">
+                            <img src="./images/slider/slide04.jpg" alt="">
+                        </div>
+                        <div class="item item-5">
+                            <img src="./images/slider/slide05.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="navpg">
+                        <ul>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#" class="active">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <section class="container phones">
+        <div class="d-fx d-fx-space-b">
+            <div class="mobile-op beeline">
+                <span class="d cc ru"></span><span class="d mc">962</span><span class="d g3">204</span><span class="d d90"></span><span
+                    class="d d89"></span>
+
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-viber"></i>
+                <i class="fab fa-telegram-plane"></i>
+            </div>
+            <div class="mobile-op mts">
+                <span class="d cc ru"></span><span class="d mc">915</span><span class="d g3">962</span><span class="d d60"></span><span
+                    class="d d51"></span>
+            </div>
+            <div class="mobile-op megafon">
+                <span class="d cc ru"></span><span class="d mc">902</span><span class="d g3">332</span><span class="d d90"></span><span
+                    class="d d95"></span>
+            </div>
+        </div>
+        <div class="phone-info text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, harum.
+        </div>
+    </section>
+
+    <section class="infograph container">
+        <div class="infograph-wrapper">
+            <ul class="info-list">
+                <li class="info-item">
+                    <div class="info-content">
+                        <div class="people">
+                            <img src="./images/shopped-woman.png" alt="" />
+                        </div>
+                        <div class="info-text">
+                            <span>Скидка на продукцию от 20% до 70%</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="info-item arrow">
+                    <div class="info-content">
+                        <div class="arrow">
+                            <img src="./images/arrow1.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="info-item">
+                    <div class="info-content">
+                        <div class="people">
+                            <img src="./images/typing-woman.png" alt="" />
+                        </div>
+                        <div class="info-text">
+                            <span>Дополнительный доход с продаж (по желанию)</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="info-item arrow">
+                    <div class="info-content">
+                        <div class="arrow">
+                            <img src="./images/arrow1.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="info-item">
+                    <div class="info-content">
+                        <div class="people">
+                            <img src="./images/meet.png" alt="" />
+                        </div>
+                        <div class="info-text">
+                            <span>Пассивный доход (по желанию)</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="info-item arrow">
+                    <div class="info-content">
+                        <div class="arrow">
+                            <img src="./images/arrow1.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="info-item">
+                    <div class="info-content">
+                        <div class="people">
+                            <img src="./images/business-leady.png" alt="" />
+                        </div>
+                        <div class="info-text">
+                            <span>Развитие офисного бизнеса (по желанию)</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="registration-button-wrapper">
+                <a href="#" class="btn btn-register">
+                    Хочу скидку и заработать
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="content container">
+        <div class="content-wrapper">
+            <div class="side-bar left">
+                <img src="./images/shadowgirl-1.svg" alt="">
+            </div>
+            <div class="main-content">
+                <div class="content-top">
+                    <h1>Step 1</h1>
+                </div>
+                <div class="content-middle">
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis sed similique est
+                        laudantium corrupti numquam consequuntur voluptates ut porro maiores!
+                    </p>
+                    <img src="./images/Recommendations-2-13-2018.jpg" alt="Рекоменация фаберлик" />
+                </div>
+                <div class="content-bottom">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident corporis optio debitis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container d-fx d-fx-space-b">
+            <div class="copyright">
+                <span>&copy; Елена Котова 2018</span>
+            </div>
+            <div class="creator text-right">
+                Created by Aleksey Komov
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
+
 </html>

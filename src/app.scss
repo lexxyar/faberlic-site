@@ -1,0 +1,85 @@
+@import "./css/colors";
+@import "./css/vars";
+@import "./css/reset";
+@import "./css/digits";
+
+body {
+  position: relative;
+  background: #a9f068;
+  background: -moz-linear-gradient(top, #a9f068 0%, #feb645 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, #a9f068),
+    color-stop(100%, #feb645)
+  );
+  background: -webkit-linear-gradient(top, #a9f068 0%, #feb645 100%);
+  background: -o-linear-gradient(top, #a9f068 0%, #feb645 100%);
+  background: -ms-linear-gradient(top, #a9f068 0%, #feb645 100%);
+  background: linear-gradient(to bottom, #a9f068 0%, #feb645 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9f068', endColorstr='#feb645', GradientType=0 );
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+  background-color: #f00;
+}
+
+.header-wrapper {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.logo {
+  background-image: url("./images/faberlic.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 150px;
+}
+
+.d-fx {
+  display: flex;
+}
+.d-fx-space-b {
+  justify-content: space-between;
+}
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  text-decoration: none;
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: black;
+  margin: 0;
+  padding: 0;
+  border: 1px solid darken($color-faberlic, 10%);
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  &.btn-register {
+    background-color: $color-faberlic;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: white;
+    &:hover {
+      background-color: darken($color-faberlic, 10%);
+    }
+    &:active {
+      background-color: lighten($color-faberlic, 10%);
+      transition: 100ms;
+      line-height: 3.8rem;
+    }
+  }
+}
+
+@import "./css/caroucel";
+@import "./css/phones";
+@import "./css/infograph";
+@import "./css/content";

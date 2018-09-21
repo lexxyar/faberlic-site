@@ -1,0 +1,20 @@
+.phones {
+  $mobile-op-line-height: 40px;
+  $mobile-op-brand-size: 25px;
+  .mobile-op {
+    background-position: 0 ($mobile-op-line-height - $mobile-op-brand-size) / 2;
+    background-repeat: no-repeat;
+    background-size: $mobile-op-brand-size;
+    padding-left: $mobile-op-brand-size + 10;
+    line-height: $mobile-op-line-height;
+    &.beeline {
+      background-image: url("./images/beeline.svg");
+    }
+    &.mts {
+      background-image: url("./images/mts.svg");
+    }
+    &.megafon {
+      background-image: url("./images/megafon.svg");
+    }
+  }
+}
