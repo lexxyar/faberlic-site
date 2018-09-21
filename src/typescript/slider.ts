@@ -8,7 +8,10 @@ export class Slider {
   private _conf: SliderConfig;
   private _items: NodeList;
   private _activeItem: number;
+  static a:number = 1;
   public constructor(private _selector: string, private _config: object = {}) {
+    Slider.a++;
+    console.log(Slider.a);
     this._obj = document.querySelector(_selector) as HTMLElement;
     this._items = this._obj.querySelectorAll(".item");
     this._activeItem = 1;
