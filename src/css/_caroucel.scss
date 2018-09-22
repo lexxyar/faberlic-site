@@ -40,9 +40,10 @@ $caroucel-item-size: 120px;
           width: 100%;
         }
         &.active {
-          &::before {
-            content: "ACTIVE";
-          }
+          // &::before {
+          //   content: "ACTIVE";
+          // }
+          
         }
       }
     }

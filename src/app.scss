@@ -28,19 +28,7 @@ body {
   background-color: #f00;
 }
 
-.header-wrapper {
-  display: grid;
-  grid-template-columns: 30% 70%;
-}
-
-.logo {
-  background-image: url("./images/faberlic.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 200px;
-  height: 150px;
-}
+@import "./css/header";
 
 .d-fx {
   display: flex;
@@ -83,3 +71,4 @@ body {
 @import "./css/phones";
 @import "./css/infograph";
 @import "./css/content";
+@import "./css/footer";

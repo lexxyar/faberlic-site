@@ -1,6 +1,7 @@
 .phones {
   $mobile-op-line-height: 40px;
   $mobile-op-brand-size: 25px;
+  margin-top: 10px;
   .mobile-op {
     background-position: 0 ($mobile-op-line-height - $mobile-op-brand-size) / 2;
     background-repeat: no-repeat;
