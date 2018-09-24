@@ -1,31 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 @import "./css/colors";
 @import "./css/vars";
+@import "./css/mixins";
 @import "./css/reset";
 @import "./css/digits";
 
 body {
   position: relative;
-  background: #a9f068;
-  background: -moz-linear-gradient(top, #a9f068 0%, #feb645 100%);
-  background: -webkit-gradient(
-    left top,
-    left bottom,
-    color-stop(0%, #a9f068),
-    color-stop(100%, #feb645)
-  );
-  background: -webkit-linear-gradient(top, #a9f068 0%, #feb645 100%);
-  background: -o-linear-gradient(top, #a9f068 0%, #feb645 100%);
-  background: -ms-linear-gradient(top, #a9f068 0%, #feb645 100%);
-  background: linear-gradient(to bottom, #a9f068 0%, #feb645 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9f068', endColorstr='#feb645', GradientType=0 );
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.05rem;
+  @include gradient-bg($color-bg-start, $color-bg-end, bottom);
   background-attachment: fixed;
   overflow-x: hidden;
 }
-
+p {
+  margin: 0.2rem;
+}
 .container {
   width: $container-width;
   margin: 0 auto;
-  // background-color: #f00;
 }
 .contet-wrapper {
   padding: $section-conent-padding;
@@ -109,7 +103,7 @@ body {
     background-color: $color-faberlic;
     font-weight: 700;
     font-size: 1.2rem;
-    color: white;
+    color: $color-text-faberlic-bg;
     &:hover {
       background-color: darken($color-faberlic, 10%);
     }

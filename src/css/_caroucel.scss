@@ -43,7 +43,6 @@ $caroucel-item-size: 120px;
           // &::before {
           //   content: "ACTIVE";
           // }
-          
         }
       }
     }
@@ -75,9 +74,10 @@ $caroucel-item-size: 120px;
             line-height: $caroucel-bullet-size;
             border-radius: 50%;
             display: block;
-
+            transition: 300ms;
+            
             &.active {
-              background-color: #fff;
+              background-color: $color-faberlic;
             }
           }
 

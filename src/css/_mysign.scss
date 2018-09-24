@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sue+Ellen+Francisco");
 .ak-sign {
   font-family: "Sue Ellen Francisco", cursive;
+  letter-spacing: normal;
   position: fixed;
   right: 10px;
   bottom: 5%;
@@ -8,6 +9,7 @@
     text-decoration: none;
     color: rgba(0, 0, 0, .7);
     font-size: 14px;
+    
     &:hover{
       color: rgba(0, 0, 0, 1);
     }

@@ -4,17 +4,21 @@
 .phones {
   $mobile-op-line-height: 20px;
   $mobile-op-brand-size: $mobile-op-line-height - 2px;
+  // $mobile-op-brand-size: $mobile-op-line-height;
+
   color: $color-text-faberlic-bg;
   padding: 5px;
+
   .mobile-op {
-    background-position: 0 ($mobile-op-line-height - $mobile-op-brand-size) / 2;
-    background-repeat: no-repeat;
-    background-size: $mobile-op-brand-size;
-    // padding-left: $mobile-op-brand-size + 10;
     line-height: $mobile-op-line-height;
+    height: $mobile-op-line-height;
+    font-size: 1rem;
+    flex-grow: 1;
+    // min-width: 33%;
     img {
       width: $mobile-op-brand-size;
       border: 1px solid $color-text-faberlic-bg;
+      float: left;
     }
     &.beeline,
     &.megafon {

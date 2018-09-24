@@ -1,3 +1,32 @@
-.footer{
-    background: $color-faberlic;
+.footer {
+  $footer-height: 2.5rem;
+
+  background: $color-faberlic;
+  height: $footer-height;
+  color: $color-text-faberlic-bg;
+  .footer-wrapper {
+    height: 100%;
+    position: relative;
+    &::before,
+    &::after {
+      content: "";
+      width: $footer-height;
+      height: $footer-height;
+      position: absolute;
+    }
+    &::before {
+      @include gradient-bg($color-faberlic, $color-faberlic-dark, right);
+      right: 102%;
+      border-radius: 0 50% 50% 0;
+    }
+    &::after {
+      @include gradient-bg($color-faberlic, $color-faberlic-dark, left);
+      background-color: #fff;
+      left: 102%;
+      border-radius: 50% 0 0 50%;
+    }
+    span {
+      line-height: $footer-height;
+    }
+  }
 }
