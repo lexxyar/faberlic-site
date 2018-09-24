@@ -22,10 +22,17 @@ body {
   overflow-x: hidden;
 }
 
+.static-bg {
+  // background-color: #fff;
+  width: $container-width + 30px;
+  margin: 0 auto;
+}
+
 .container {
   width: $container-width;
   margin: 0 auto;
-  background-color: #f00;
+  // background-color: #f00;
+  background-color: #fff;
 }
 
 @import "./css/header";
