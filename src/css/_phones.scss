@@ -1,21 +1,39 @@
+.top-line {
+  background: $color-faberlic;
+}
 .phones {
-  $mobile-op-line-height: 40px;
-  $mobile-op-brand-size: 25px;
-  margin-top: 10px;
+  $mobile-op-line-height: 20px;
+  $mobile-op-brand-size: $mobile-op-line-height - 2px;
+  color: $color-text-faberlic-bg;
+  padding: 5px;
   .mobile-op {
     background-position: 0 ($mobile-op-line-height - $mobile-op-brand-size) / 2;
     background-repeat: no-repeat;
     background-size: $mobile-op-brand-size;
-    padding-left: $mobile-op-brand-size + 10;
+    // padding-left: $mobile-op-brand-size + 10;
     line-height: $mobile-op-line-height;
-    &.beeline {
-      background-image: url("./images/beeline.svg");
+    img {
+      width: $mobile-op-brand-size;
+      border: 1px solid $color-text-faberlic-bg;
+    }
+    &.beeline,
+    &.megafon {
+      img {
+        border-radius: 50%;
+        background-color: $color-text-faberlic-bg;
+      }
     }
     &.mts {
-      background-image: url("./images/mts.svg");
+      //   background-image: url("./images/mts.svg");
+      img {
+        border-radius: 4px;
+        background-color: $color-text-faberlic-bg;
+      }
     }
-    &.megafon {
-      background-image: url("./images/megafon.svg");
+  }
+  .phone-info {
+    .small {
+      font-size: 0.7rem;
     }
   }
 }

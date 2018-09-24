@@ -1,8 +1,11 @@
-$infograph-image-height: 200px;
-$infograph-text-strach: -25px;
-
 .infograph {
-  margin-top: 10px;
+  $infograph-image-height: 200px;
+  $infograph-text-strach: -25px;
+  // margin-top: 10px;
+  // border: 2px solid $color-faberlic;
+  // border-radius: 0 10px 10px 10px;
+  // padding: 10px;
+  background-color: #fff;
   .infograph-wrapper {
     .info-list {
       list-style: none;
@@ -32,11 +35,11 @@ $infograph-text-strach: -25px;
           }
         }
         &:nth-child(even) {
-            .info-content {
-              align-items: center;
-              grid-template-rows: 1fr;
-            }
+          .info-content {
+            align-items: center;
+            grid-template-rows: 1fr;
           }
+        }
         &:nth-child(3) {
           .people img {
             height: $infograph-image-height - 20px;

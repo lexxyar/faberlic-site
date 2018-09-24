@@ -1,0 +1,101 @@
+.menu {
+  $menu-tab-position: 20%;
+  $menu-tab-width: 3rem;
+  $menu-tab-height: 3rem;
+  $menu-tab-radius: $menu-tab-height / 2;
+
+  $menu-content-width: 12rem;
+
+  $menu-hamburger-line-width: 40%;
+  $menu-hamburger-line-height: 2px;
+  $menu-hamburger-line-space: 2px;
+  $menu-hamburger-button: 0.3rem;
+  $menu-hamburger-button-size: $menu-tab-height - $menu-hamburger-button * 2;
+
+  position: fixed;
+  right: 0;
+  top: $menu-tab-position;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: 200ms;
+  z-index: 100;
+  margin-right: -$menu-content-width;
+
+  &.expanded {
+    // width: $menu-expanded-width;
+    margin-right: 0;
+  }
+
+  .menu-tab {
+    display: block;
+    position: relative;
+    width: $menu-tab-width;
+    height: $menu-tab-height;
+    z-index: 100;
+    background: $color-faberlic;
+    border-radius: $menu-tab-height 0 0 $menu-tab-height;
+
+    .expandable-button {
+      display: block;
+      height: $menu-hamburger-button-size;
+      width: $menu-hamburger-button-size;
+      background-color: $color-text-faberlic-bg;
+      border-radius: 50%;
+      top: $menu-hamburger-button;
+      left: $menu-hamburger-button;
+      text-align: center;
+      position: relative;
+
+      .nav-icon {
+        color: $color-faberlic;
+        display: block;
+        width: $menu-hamburger-line-width;
+        height: $menu-hamburger-line-height;
+        position: absolute;
+        top: 50%;
+        left: (100% - $menu-hamburger-line-width)/2;
+        background-color: $color-faberlic;
+
+        &::before,
+        &::after {
+          content: "";
+          background-color: $color-faberlic;
+          display: block;
+          height: $menu-hamburger-line-height;
+        }
+        &::before {
+          margin-top: -($menu-hamburger-line-height + $menu-hamburger-line-space);
+        }
+        &::after {
+          margin-top: $menu-hamburger-line-height + $menu-hamburger-line-space *
+            2;
+        }
+      }
+    }
+  }
+
+  .menu-content {
+    display: block;
+    background-color: $color-faberlic;
+    width: $menu-content-width;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      .menu-item {
+        a {
+          color: $color-text-faberlic-bg;
+          text-decoration: none;
+          display: block;
+          padding: 10px;
+          white-space: nowrap;
+          transition: 300ms;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, .3);
+          }
+        }
+      }
+    }
+  }
+}
