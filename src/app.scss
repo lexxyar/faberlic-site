@@ -114,7 +114,9 @@ p {
     }
   }
 }
-
+.color-silver {
+  color: $color-silver;
+}
 @import "./css/caroucel";
 @import "./css/phones";
 @import "./css/infograph";
