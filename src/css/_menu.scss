@@ -1,17 +1,4 @@
 .menu {
-  $menu-tab-position: 20%;
-  $menu-tab-width: 3rem;
-  $menu-tab-height: 3rem;
-  $menu-tab-radius: $menu-tab-height / 2;
-
-  $menu-content-width: 12rem;
-
-  $menu-hamburger-line-width: 40%;
-  $menu-hamburger-line-height: 2px;
-  $menu-hamburger-line-space: 2px;
-  $menu-hamburger-button: 0.3rem;
-  $menu-hamburger-button-size: $menu-tab-height - $menu-hamburger-button * 2;
-
   position: fixed;
   right: 0;
   top: $menu-tab-position;

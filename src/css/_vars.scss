@@ -1,5 +1,46 @@
+/* Colors */
+$color-faberlic: #cf0055;
+$color-faberlic-dark: darken($color-faberlic, 15%);
+$color-text-faberlic-bg: rgb(241, 240, 240);
+$color-bg-start: #a9f068;
+$color-bg-start: #CCFF66;
+$color-bg-middle: #ccff00;
+$color-bg-end: #feb645;
+$color-bg-end: #FF9900;
+$color-silver: rgb(192,192,192);
+
+/* Misc */
 $container-width: 800px;
 $border-radius: 10px;
 $connector-height: 100px;
 $section-border-width: 2px;
 $section-conent-padding: 10px;
+
+/* Footer */
+$footer-height: 2.5rem;
+
+/* Phones */
+$mobile-op-line-height: 20px;
+$mobile-op-brand-size: $mobile-op-line-height - 2px;
+
+/* Slider */
+$caroucel-bullet-size: 8px;
+$caroucel-item-size: 120px;
+
+/* Menu */
+$menu-tab-position: 20%;
+  $menu-tab-width: 3rem;
+  $menu-tab-height: 3rem;
+  $menu-tab-radius: $menu-tab-height / 2;
+
+  $menu-content-width: 12rem;
+
+  $menu-hamburger-line-width: 40%;
+  $menu-hamburger-line-height: 2px;
+  $menu-hamburger-line-space: 2px;
+  $menu-hamburger-button: 0.3rem;
+  $menu-hamburger-button-size: $menu-tab-height - $menu-hamburger-button * 2;
+
+  /* Infograph */
+  $infograph-image-height: 200px;
+  $infograph-text-strach: -25px;

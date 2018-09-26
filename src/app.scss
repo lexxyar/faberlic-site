@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import "./css/colors";
 @import "./css/vars";
 @import "./css/mixins";
 @import "./css/reset";
@@ -10,9 +9,49 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   letter-spacing: 0.05rem;
-  @include gradient-bg($color-bg-start, $color-bg-end, bottom);
+  // @include gradient-bg($color-bg-start, $color-bg-end, bottom);
   background-attachment: fixed;
   overflow-x: hidden;
+
+  background: $color-bg-start;
+  background: -moz-linear-gradient(
+    top,
+    $color-bg-start 0%,
+    $color-bg-middle 25%,
+    $color-bg-end 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, $color-bg-start),
+    color-stop(25%, $color-bg-middle),
+    color-stop(100%, $color-bg-end)
+  );
+  background: -webkit-linear-gradient(
+    top,
+    $color-bg-start 0%,
+    $color-bg-middle 25%,
+    $color-bg-end 100%
+  );
+  background: -o-linear-gradient(
+    top,
+    $color-bg-start 0%,
+    $color-bg-middle 25%,
+    $color-bg-end 100%
+  );
+  background: -ms-linear-gradient(
+    top,
+    $color-bg-start 0%,
+    $color-bg-middle 25%,
+    $color-bg-end 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    $color-bg-start 0%,
+    $color-bg-middle 25%,
+    $color-bg-end 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ccff66', endColorstr='#ff9900', GradientType=0 );
 }
 p {
   margin: 0.2rem;
@@ -24,8 +63,6 @@ p {
 .contet-wrapper {
   padding: $section-conent-padding;
 }
-@import "./css/header";
-
 .d-fx {
   display: flex;
 }
@@ -117,6 +154,7 @@ p {
 .color-silver {
   color: $color-silver;
 }
+@import "./css/header";
 @import "./css/caroucel";
 @import "./css/phones";
 @import "./css/infograph";
